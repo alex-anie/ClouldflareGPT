@@ -4,24 +4,9 @@ import ThreeStars from "../Components/ThreeStars";
 import Pen from "../Components/pen";
 
 export default function Sidebar() {
-    const styles = {
-        border: '2px solid red',
-    }
-
-    const styles2 = {
-        border: '2px solid pink',
-    }
-
-    const styles3 = {
-        border: '2px solid cyan',
-    }
-
-    const styles4 = {
-        border: '2px solid orange',
-    }
   return (
    <>
-    <article className="w-[18em] h-screen bg-neutral-950 text-neutral-50 relative" >
+    <article className="hidden md:block w-[18em] h-screen bg-neutral-950 text-neutral-50 relative" >
         <section className="w-[90%] my-4 mx-auto">
             {/* Logo Section */}
             <aside className="bg-neutral-950 w-[90%] select-none absolute top-4">
