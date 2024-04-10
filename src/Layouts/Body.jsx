@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { AlignLeft, ArrowUp, ChevronDown, GitHub} from "react-feather";
 import {Link} from 'react-router-dom'
 import ClouldFlare from "../Components/ClouldFlare";
@@ -81,9 +83,12 @@ export default function Body() {
             <div className="overflow-hidden [&:has(textarea:focus)]:border-token-border-xheavy [&:has(textarea:focus)]:shadow-[0_2px_6px_rgba(0,0,0,.05)] flex flex-col w-[50%] flex-grow relative border dark:text-white rounded-2xl">
               
             <textarea id="prompt-textarea" tabIndex="0" data-id="request-WEB:d3c1fd8c-01e8-4c17-8d0d-176e40037eed-4" dir="auto" rows="1" placeholder="Type a prompt …" className="m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12  max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4" style={{height: '52px', 'overflow-y': 'hidden'}}></textarea>
-                <div className="bg-neutral-700 p-1 w-[fit-content] rounded-lg absolute right-5 bottom-3 cursor-pointer">
+
+            {/* Submit button */}
+              <div id="submit" onClick={getMessage} className="bg-neutral-700 p-1 w-[fit-content] rounded-lg absolute right-5 bottom-3 cursor-pointer" >
                   <ArrowUp width={20} height={20}/>
-                </div>
+              </div>
+
             </div>
 
             <div className="mt-5 mx-10 md:mx-0 text-center">

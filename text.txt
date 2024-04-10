@@ -1,0 +1,30 @@
+…or create a new repository on the command line
+echo "# ClouldflareGPT" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/alex-anie/ClouldflareGPT.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/alex-anie/ClouldflareGPT.git
+git branch -M main
+git push -u origin main
+
+=============================================
+
+Selecting Cloudflare account retrieving accounts
+│ account Ocxigin@gmail.com's Account
+│
+├ Deploying your application
+│ deployed via `npm run deploy`
+│
+├  SUCCESS  View your deployed application at https://broken-wildflower-3407.ocxigin.workers.dev
+│
+│ Navigate to the new directory cd broken-wildflower-3407
+│ Run the development server npm run start
+│ Deploy your application npm run deploy
+│ Read the documentation https://developers.cloudflare.com/workers
+│ Stuck? Join us at https://discord.gg/cloudflaredev
